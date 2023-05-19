@@ -2011,6 +2011,8 @@ strhandle(void)
 				 * TODO if defaultbg color is changed, borders
 				 * are dirty
 				 */
+                if (j == defaultbg)
+                    xclearwin();
 				tfulldirt();
 			}
 			return;
